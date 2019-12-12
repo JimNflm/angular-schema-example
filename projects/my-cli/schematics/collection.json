@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add my library to the project.",
+      "factory": "./ng-add/index#ngAdd"
+    },
+    "my-service": {
+      "description": "Generate a service in the project.",
+      "factory": "./my-service/index#myService",
+      "schema": "./my-service/schema.json"
+    },
+    "my-first-schema": {
+      "aliases": ["mfs"],
+      "factory": "./my-first-schema",
+      "description": "my first schematic.",
+      "schema": "./my-first-schema/schema.json"
+    }
+  }
+}
